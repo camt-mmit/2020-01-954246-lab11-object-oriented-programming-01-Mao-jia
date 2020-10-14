@@ -66,6 +66,10 @@ class App
     $n->print($num);}
     printf("\n");
   if ($this->category==2){
+    /**
+     * The pricing data come from file ass-03-pricing-data.txt
+     * not the hard code associative array here.
+     */
     $pricings = [
 		[ 'unit' => 10,           'price' => 10, 'isWhole' => 1 ],
 		[ 'unit' => 5,           'price' =>  3, 'isWhole' => 0 ],
@@ -84,6 +88,16 @@ class App
 }
 }
 
+/**
+ * The assignment tells you that all application tasks are in run() method
+ * so the global statements just create App instance and call run() method.
+ * For exmaple:
+ * 
+ * $app = new App(/ *  parameter list * /);
+ * $app->run();
+ * 
+ * In the short, your following code must be in run() method.
+ */
 
 while(true){
 printf(<<<EOT
