@@ -8,6 +8,12 @@ class price
 {
   private $pricings;
   private $unit;
+/**
+ * The assgiment requires you to pass filename as constructor argument
+ * but you pass associative array instead.
+ * And I think you don't want $unit here because you don't use it anywher
+ * in your code.
+ */
 function __construct($pricings,$unit)
 {
  $this->pricings=$pricings;
